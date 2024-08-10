@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de pessoas:</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Cadastro de pessoas: </h1>
+        </div>
+    </header>
+    <section>
+        <div class="cadastro">
+            <div class="dados-pessoais">
+                <h4>Dados Pessoais:</h4>
+                <div>
+                    <label for="first_name">Primeiro nome:</label>
+                    <input type="text" name="first_name" placeholder="Informe seu nome" maxlength="100" required>
+                    <label for="last_name">Sobrenome: </label>
+                    <input type="text" name="last_name" placeholder="Sobrenome" maxlength="100" required>
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" name="data-nascimento" min="01-01-1920" max="01-01-2024">
+                </div>
+                <div>
+                    <b><p>Informe seu sexo:</p></b>
+                    <label for="masculino">Maculino</label>
+                    <input type="radio" name="masculino">
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" name="feminino">
+                </div>
+            </div>
+            <div class="endereco">
+                <h4>Endereço:</h4>
+                <label for="endereco">Endereço</label>
+                <input type="text" maxlength="200">
+                <label for="cep">Cep: </label>
+                <input type="text" maxlength="10">
+                <label for="cep">Estado: </label>
+                <select name="" id="">
+                    <option value="AC">Acre - AC</option>
+                    <option value="AL">Alagoas - AL</option>
+                    <option value="AP">Amapá - AP</option>
+                    <option value="AM">Amazonas - AM</option>
+                    <option value="BA">Bahia - BA</option>
+                    <option value="CE">Ceará - CE</option>
+                    <option value="DF">Distrito Federal - DF</option>
+                    <option value="ES">Espírito Santo - ES</option>
+                    <option value="GO">Goiás - GO</option>
+                    <option value="MA">Maranhão - MA</option>
+                    <option value="MT">Mato Grosso - MT</option>
+                    <option value="MS">Mato Grosso do Sul - MS</option>
+                    <option value="MG">Minas Gerais - MG</option>
+                    <option value="PA">Pará - PA</option>
+                    <option value="PB">Paraíba - PB</option>
+                    <option value="PR">Paraná - PR</option>
+                    <option value="PE">Pernambuco - PE</option>
+                    <option value="PI">Piauí - PI</option>
+                    <option value="RJ">Rio de Janeiro - RJ</option>
+                    <option value="RN">Rio Grande do Norte - RN</option>
+                    <option value="RS">Rio Grande do Sul - RS</option>
+                    <option value="RO">Rondônia - RO</option>
+                    <option value="RR">Roraima - RR</option>
+                    <option value="SC">Santa Catarina - SC</option>
+                    <option value="SP">São Paulo - SP</option>
+                    <option value="SE">Sergipe - SE</option>
+                    <option value="TO">Tocantins - TO</option>
+                </select>
+            </div>
+            <div class="contato">
+                <h4>Contato:</h4>
+                <label for="email">Email:</label>
+                <input type="email" required>
+            </div>
+            <div class="extra">
+                <h4>Curiosidades:</h4>
+                <label for="color">Cor Favorita:</label>
+                <input type="color">
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>
