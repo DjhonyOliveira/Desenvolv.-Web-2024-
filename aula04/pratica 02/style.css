@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 10%;
+}
+
+header {
+    background-image: url(./assets/imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgb(151, 151, 151);
+    height: 35vh;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    font-family: 'Libre Baskerville';
+    font-weight: 400;
+    font-style: italic;
+}
+
+ul{
+    padding: 5px;
+    background-color: rgb(196, 196, 196);
+}
+
+.header-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.header-button #perfil {
+    width: 25vh;
+    height: auto;
+    border-radius: 100%;
+    border: 5px solid #fff;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 2%;
+}
+
+#git, #link, #insta {
+    margin-top: 15vh;
+    height: 30px;
+    border: 2px solid #fff;
+}
+
+.social a:hover {
+    scale: 1.1;
+}
+
+section {
+    margin-top: 10%;
+}
+
+section .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* responsive header */
+@media (max-width: 546px) {
+    .header {
+        background-image: url(./assets/imagens/fundo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: auto;
+    }
+
+    .header-button{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #git, #link, #insta {
+        margin-top: 25px;
+        height: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    #git,#link, #insta {
+        margin-top: 25px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    #git,#link, #insta {
+        margin-top: 25px;
+        height: 29px;
+    }
+}
+/* finish header */
+
+/* section responsive */
+
+@media(max-width: 992px) {
+    .dados{
+        margin-top: 20%;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 520px) {
+    .dados{
+        flex-direction: column;
+        margin-top: 25%;
+    }
+}
+
+@media(max-width: 448px) {
+    .dados {
+        margin-top: 40%;
+    }
+}
+
+
+@media(max-width: 375px) {
+    .dados {
+        margin-top: 50%;
+    }
+}
